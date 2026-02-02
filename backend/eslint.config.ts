@@ -1,4 +1,5 @@
 import js from "@eslint/js";
+import jest from "eslint-plugin-jest";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 import css from "@eslint/css";
@@ -7,6 +8,9 @@ import { defineConfig } from "eslint/config";
 export default defineConfig([
 	{
 		ignores: ["./dist/**/*", "**/*.config.ts"],
+	},
+	{
+		plugins: { jest: jest },
 	},
 	{
 		files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
