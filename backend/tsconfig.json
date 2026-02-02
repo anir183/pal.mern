@@ -24,9 +24,14 @@
 		"moduleDetection": "force",
 		"skipLibCheck": true,
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": ["./src/*"],
+			"@database/*": ["./src/database/*"],
+			"@server/*": ["./src/server/*"],
+			"@services/*": ["./src/services/*"],
+			"@types/*": ["./src/types/*"],
+			"@utils/*": ["./src/utils/*"]
 		}
 	},
-	"include": ["./src/**/*", "./tests/*"],
+	"include": ["./src/**/*", "./tests/**/*"],
 	"exclude": ["./dist/**/*", "./node_modules/*", "**/*.config.ts"]
 }
